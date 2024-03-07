@@ -8,10 +8,17 @@ class Level {
     /* according to describtion of the exercise
     declare data members as integer */
 
-    int start_level;
+    int start_level; 
     int experience_per_level;
     int level;
     int experience; 
+
+    //add constructor 
+    Level(int start_level, int experience_per_level); 
+
+
+
+
 
 
 
