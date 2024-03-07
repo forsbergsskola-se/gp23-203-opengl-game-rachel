@@ -8,13 +8,13 @@ class Level {
     /* according to describtion of the exercise
     declare data members as integer */
 
-    int start_level; 
+    int start_level;
     int experience_per_level;
     int level;
-    int experience; 
+    int experience;
 
     //add constructor 
-    Level(int start_level, int experience_per_level); 
+    Level(int start_level, int experience_per_level);
 
 
     // add method to gain experience 
@@ -30,6 +30,9 @@ class Level {
         }
     }
 
+    // write a method to print in the console the level and experience 
+    void print() {
+        cout << "Level: " << level << ", Experience: " << experience << endl;
 
 
 
@@ -39,8 +42,7 @@ class Level {
 
 
 
-
-
+    }
 };
 
 int main()
