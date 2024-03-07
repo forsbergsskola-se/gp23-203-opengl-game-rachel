@@ -4,7 +4,7 @@ using namespace std;
 
 // Make a level class 
 class Level {
-
+private:
     /* according to describtion of the exercise
     declare data members as integer */
 
@@ -13,8 +13,9 @@ class Level {
     int level;
     int experience;
 
+public:
     //add constructor 
-    Level(int start_level, int experience_per_level);
+    Level(int start_level, int experience_per_level) : level(start_level), experience(0), experience_per_level(experience_per_level), level(start_level){}
 
 
     // add method to gain experience 
@@ -38,7 +39,7 @@ class Level {
 
 int main()
 {
-    Level level { 1, 10 };// from elevel 1 to 10 
+    Level level{ 1, 10 };// from elevel 1 to 10 
     level.print();
     level.gain_experience(9);// gain 9 experience 
     level.print();
