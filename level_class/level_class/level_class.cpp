@@ -15,7 +15,7 @@ private:
 
 public:
     //add constructor 
-    Level(int start_level, int experience_per_level) : level(start_level), experience(0), experience_per_level(experience_per_level), level(start_level){}
+    Level(int start_level, int experience_per_level) : start_level(start_level), level(start_level), experience(0), experience_per_level(experience_per_level){}
 
 
     // add method to gain experience 
@@ -29,6 +29,12 @@ public:
             // then level up 
             level++; // add to level 
         }
+        if (experience >= experience_per_level)
+        {
+            level++;
+            experience = experience_per_level - 1; 
+        }
+    
     }
 
     // write a method to print in the console the level and experience 
@@ -40,13 +46,13 @@ public:
 int main()
 {
     Level level{ 1, 10 };// from elevel 1 to 10 
-    level.print();
+    level.print();// output = level 1, experience 0
     level.gain_experience(9);// gain 9 experience 
-    level.print();
+    level.print();// output = level 1, experience 9
     level.gain_experience(3);// gain 3 more experience 
-    level.print();
-    level.gain_experience(18);
-    level.print(); 
+    level.print();// output = level 2, experience 2
+    level.gain_experience(18);// 
+    level.print(); // output = level 4, experience 0
 
     return 0;
 }
