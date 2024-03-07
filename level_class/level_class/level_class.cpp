@@ -33,20 +33,20 @@ class Level {
     // write a method to print in the console the level and experience 
     void print() {
         cout << "Level: " << level << ", Experience: " << experience << endl;
-
-
-
-
-
-
-
-
-
     }
 };
 
 int main()
 {
-   
+    Level level { 1, 10 };// from elevel 1 to 10 
+    level.print();
+    level.gain_experience(9);// gain 9 experience 
+    level.print();
+    level.gain_experience(3);// gain 3 more experience 
+    level.print();
+    level.gain_experience(18);
+    level.print(); 
+
+    return 0;
 }
 
