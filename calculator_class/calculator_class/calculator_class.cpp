@@ -35,3 +35,9 @@ int main()
     return 0;
 
 }
+
+// After writing pseudocode in main I got many errors -> 
+// these errors are because I do not have a member in 
+// calculator class that presents in main so I need to include 
+// them in the class as well.
+
