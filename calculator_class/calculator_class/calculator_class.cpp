@@ -4,6 +4,7 @@ using namespace std;
 
 class Calculator {
 private: 
+    double number; // declare double 
 
 
 
@@ -12,6 +13,7 @@ public:
     void set_number() {
 
     }
+
     // Method for clear calculator
     // (clear the current number calculator has)
     void clear() {
