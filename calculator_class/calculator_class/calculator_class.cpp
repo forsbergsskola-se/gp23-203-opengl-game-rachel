@@ -13,7 +13,10 @@ public:
     void clear() {
 
     }
+    // Method that get a number(maybe float) 
+    double get_number() {
 
+    }
 
 };
 
