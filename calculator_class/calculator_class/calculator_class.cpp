@@ -8,11 +8,16 @@ private:
 
 
 public:
+    // Method to set the current number 
+    void set_number() {
+
+    }
     // Method for clear calculator
     // (clear the current number calculator has)
     void clear() {
 
     }
+
     // Method that get a number(maybe float) 
     double get_number() {
 
