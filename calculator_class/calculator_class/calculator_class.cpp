@@ -8,6 +8,11 @@ private:
 
 
 public:
+    // Method for clear calculator
+    // (clear the current number calculator has)
+    void clear() {
+
+    }
 
 
 };
