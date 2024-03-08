@@ -14,5 +14,19 @@ public:
 
 int main()
 {
-    
+    Calculator calculator; 
+    calculator.set_number(5);
+    calculator.set_operation('+');
+    calculator.perform_operation(3);
+    cout << calculator.get_number() << endl; 
+    calculator.Clear();
+    calculator.set_number(2);
+    calculator.set_operation('*');
+    calculator.perform_operation(3);
+    calculator.set_operation('-');
+    calculator.perform_operation(1);
+    cout << calculator.get_number() << endl;
+
+    return 0;
+
 }
