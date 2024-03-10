@@ -29,6 +29,16 @@ public:
         return number;
     }
 
+    // check for valid operation 
+    void set_operation(char operation) {
+        if (operation == '+' || operation == '-' || operation == '*' || operation == '/') {
+            operation = operation;
+        }
+        else
+        {
+            cout << "Error" << endl;// print error in console 
+        }
+    }
 };
 
 int main()
