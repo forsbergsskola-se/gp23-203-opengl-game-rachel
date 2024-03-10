@@ -67,7 +67,7 @@ int main()
     calculator.set_operation('+');
     calculator.perform_operation(3);
     cout << calculator.get_number() << endl; 
-    calculator.Clear();
+    calculator.clear();
     calculator.set_number(2);
     calculator.set_operation('*');
     calculator.perform_operation(3);
