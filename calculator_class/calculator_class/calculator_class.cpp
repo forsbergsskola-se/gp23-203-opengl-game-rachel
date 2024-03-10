@@ -14,8 +14,8 @@ public:
     Calculator() : number(0),operation('+'){}
 
     // Method to set the current number 
-    void set_number() {
-
+    void set_number(double numero) {
+        number = numero;
     }
 
     // Method for clear calculator
