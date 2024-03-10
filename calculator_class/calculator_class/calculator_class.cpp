@@ -5,10 +5,14 @@ using namespace std;
 class Calculator {
 private: 
     double number; // declare double 
-
+    char operation; // for using +,-,* and / 
 
 
 public:
+    // Initializing number to 0
+    // default operation to be addition
+    Calculator() : number(0),operation('+'){}
+
     // Method to set the current number 
     void set_number() {
 
