@@ -15,7 +15,15 @@ private:
 	int health;
 
 public: 
+	// writing constructor for initializing name and health
+	Unit(std::string name, int health) : name(name), health(health){}
 
+	// writing vitrual method to take damage
+	virtual void(take_damage) {
+		health -= damage;
+	}
+
+	
 };
 
 int main() {
