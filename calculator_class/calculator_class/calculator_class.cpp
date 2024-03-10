@@ -39,6 +39,25 @@ public:
             cout << "Error" << endl;// print error in console 
         }
     }
+
+    // method to do an operation after current operation 
+    void perform_operation(double numero) {
+        if (operation == '+') {
+            number += numero;
+        }
+        else if (operation == '-') {
+            number -= numero;
+        }
+        else if (operation == '*') {
+            number *= numero;
+        }
+        else if (operation == '/') {
+            if (numero != 0)
+                number /= numero;
+            else
+                cout << "Error" << endl;
+        }
+    }
 };
 
 int main()
