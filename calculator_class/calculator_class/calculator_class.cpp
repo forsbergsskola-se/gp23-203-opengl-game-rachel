@@ -26,7 +26,7 @@ public:
 
     // Method that get a number(maybe float) 
     double get_number() {
-
+        return number;
     }
 
 };
