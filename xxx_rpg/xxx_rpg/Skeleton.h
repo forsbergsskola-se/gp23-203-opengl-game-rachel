@@ -1,10 +1,15 @@
 #pragma once
 #include <iostream>
 
-class Skeleton {
+class Skeleton :public Unit {
 public: 
-
-
+	// constructor for initializing skeleton with default values 
+	Skeleton() : Unit("Skeleton", 4){}
+	// write take damage method to double the damage
+	void takeDamage(int damage) override {
+		std::cout << "The attack is very effective!" << std::endl;
+		Unit::takeDamage(damage * 2);// double the damage
+	}
 };
 
 class Unit {
